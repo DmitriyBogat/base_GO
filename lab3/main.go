@@ -55,6 +55,10 @@ func main() {
 				fmt.Scanln(&a)
 				fmt.Print("Введите второе число: ")
 				fmt.Scanln(&b)
+				if op == "/" && (a == 0 || b == 0) {
+					fmt.Println("ИСПОЛЬЗОВАНИЕ 0 ПРИ ДЕЛЕНИЕ НЕ ДОПУСТИМО!")
+					os.Exit(1)
+				}
 			}
 			switch op {
 			case "+":
