@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
-	"lab8/flags"
+	"main/lab8/flags"
 )
 
 func main() {
-
-	fmt.Println("Привет")
+	var F flags.Flags
+	F = flags.GetFlag()
+	fmt.Println(F.Log)
+	fmt.Println(F.Jaeger_url)
 }
