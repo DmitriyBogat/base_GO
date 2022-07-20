@@ -9,5 +9,6 @@ func main() {
 	var F flags.Flags
 	F = flags.GetFlag()
 	fmt.Println(F.Log)
-	fmt.Println(F.Jaeger_url)
+	//fmt.Println(F.Jaeger_url)
+	//fmt.Println(F.Port)
 }
