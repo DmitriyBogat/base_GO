@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	"main/lab8/flags"
+	"main/lab9/flags"
 )
 
 func main() {
 	var F flags.Flags
-	F = flags.GetFileflag()
-	//F = flags.GetFlag()
+	var fileF flags.Flags
+	F = flags.GetFlag()
+	fileF = flags.GetFileflag()
 	fmt.Println(F.Log)
-	//fmt.Println(F.Jaeger_url)
-	//fmt.Println(F.Port)
+	fmt.Println(F.Sentry_url)
+	fmt.Println(fileF.Log)
 }
